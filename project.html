@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tasker — CLI de automatización — Roberto Bello</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind = { config: {
+      theme: {
+        extend: {
+          colors: { 'bg-900': '#0f1724', 'card': '#0b1220', 'accent': '#00E5FF' }
+        },
+        fontFamily: { sans: ['Inter'], mono: ['"JetBrains Mono"'] }
+      }
+    } }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-bg-900 text-white min-h-screen">
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <a href="/" class="text-sm text-muted hover:text-white">&larr; Volver</a>
+    <header class="mt-6">
+      <h1 class="text-3xl font-extrabold">Tasker — CLI de automatización</h1>
+      <p class="text-muted mt-2">Un CLI para definir tareas y pipelines con plugins simples. Pensado para productividad y reproducibilidad.</p>
+      <div class="mt-4 flex gap-3">
+        <a href="#" class="px-4 py-2 rounded-md bg-accent text-bg-900">Demo</a>
+        <a href="#" class="px-4 py-2 rounded-md border border-white/6 text-muted">Repositorio</a>
+      </div>
+    </header>
+
+    <main class="mt-8 grid md:grid-cols-3 gap-6">
+      <section class="md:col-span-2">
+        <img src="https://picsum.photos/seed/tasker/1200/600" alt="screenshot" class="w-full rounded-md mb-4">
+        <h2 class="text-xl font-semibold">Descripción</h2>
+        <p class="text-muted mt-2">
+          Tasker es una herramienta pequeña que permite definir tareas en YAML, enlazarlas y ejecutarlas de forma incremental.
+          Soporta plugins para notificaciones, runners remotos y plantillas.
+        </p>
+
+        <h3 class="mt-6 font-semibold">Cómo probar localmente</h3>
+        <pre class="mt-2 bg-card p-4 rounded text-sm overflow-auto"><code>git clone https://github.com/youruser/tasker
+cd tasker
+python -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+tasker run --example</code></pre>
+
+        <h3 class="mt-6 font-semibold">Características</h3>
+        <ul class="list-disc list-inside text-muted mt-2 space-y-1">
+          <li>Definición declarativa de tareas (YAML)</li>
+          <li>Plugins para entradas/salidas y notificaciones</li>
+          <li>Caché incremental para evitar re-ejecuciones</li>
+        </ul>
+      </section>
+
+      <aside class="md:col-span-1 bg-card p-4 rounded">
+        <div>
+          <h4 class="font-semibold">Stack</h4>
+          <div class="text-sm text-muted mt-2 space-y-1">
+            <div>Python • Click • PyYAML</div>
+            <div>Tests: pytest</div>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <h4 class="font-semibold">Badges</h4>
+          <div class="flex gap-2 mt-2">
+            <img src="https://img.shields.io/badge/build-passing-green" alt="build">
+            <img src="https://img.shields.io/badge/license-MIT-blue" alt="license">
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <h4 class="font-semibold">Enlaces</h4>
+          <div class="flex flex-col gap-2 mt-2">
+            <a href="#" class="text-accent">Repositorio</a>
+            <a href="#" class="text-accent">Releases</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
