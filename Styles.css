@@ -22,7 +22,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("fondo/fondo.jpg"); /* ajusta la ruta */
+  background-image: url("fondo.jpg"); /* asegúrate que esté en la raíz */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,5 +158,7 @@ a:hover {
   .hero-text p { font-size: 1rem; }
   .btn { width: 100%; text-align: center; }
 }
+
+
 
 
