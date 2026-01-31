@@ -15,17 +15,16 @@ body {
   line-height: 1.6;
 }
 
-/* Hero moderno */
+/* Hero */
 .hero {
   position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("fondo.jpg"); /* asegúrate que esté en la raíz */
+  background-image: url("fondo.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 .overlay {
   position: absolute;
@@ -40,24 +39,10 @@ body {
   padding: 2rem;
   animation: fadeIn 2s ease-out forwards;
 }
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.hero-text p {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-/* Animación */
 .fade-in { opacity: 0; }
 @keyframes fadeIn { to { opacity: 1; } }
+.hero-text h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero-text p { font-size: 1.3rem; margin-bottom: 2rem; }
 
 /* Botones */
 .btn {
@@ -83,16 +68,6 @@ body {
   color: #0b1f3a;
 }
 
-/* Enlaces */
-a {
-  color: var(--accent-green);
-  text-decoration: none;
-}
-a:hover {
-  color: var(--accent-blue);
-  text-decoration: underline;
-}
-
 /* Secciones */
 .section {
   padding: 4rem 1rem;
@@ -102,6 +77,8 @@ a:hover {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
+/* Cards */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -112,7 +89,7 @@ a:hover {
   background: var(--bg-card);
   padding: 2rem;
   border-radius: 12px;
-  max-width: 300px;
+  max-width: 320px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -122,6 +99,30 @@ a:hover {
 }
 .card h3 {
   margin-top: 0;
+  color: var(--accent-green);
+}
+
+/* Subcards para imágenes internas */
+.subcards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.subcard {
+  flex: 1 1 300px;
+  background: var(--bg-card);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.subcard img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.subcard h5 {
+  margin-bottom: 0.5rem;
   color: var(--accent-green);
 }
 
@@ -151,14 +152,7 @@ a:hover {
 @media (max-width: 768px) {
   .hero-text h1 { font-size: 2.2rem; }
   .hero-text p { font-size: 1.1rem; }
-  .cards { flex-direction: column; align-items: center; }
-}
-@media (max-width: 480px) {
-  .hero-text h1 { font-size: 1.8rem; }
-  .hero-text p { font-size: 1rem; }
-  .btn { width: 100%; text-align: center; }
-}
-
+  .cards, .sub
 
 
 
