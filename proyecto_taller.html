@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taller Mecánico — Gestión y Pagos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,12 +12,11 @@
     <h1>Taller Mecánico — Sistema de Gestión y Pasarela de Pagos (Sandbox)</h1>
 
     <h2>¿Qué problema resuelve?</h2>
-    <p>Este proyecto está diseñado para talleres mecánicos que necesitan:</p>
     <ul>
-      <li>Gestionar órdenes, ventas, clientes, proveedores e inventario.</li>
-      <li>Auditar accesos y acciones críticas.</li>
-      <li>Cobrar en modo sandbox con tokenización de tarjetas.</li>
-      <li>Proteger credenciales y pagos con cifrado y controles operativos.</li>
+      <li>Gestión integral de órdenes, ventas, clientes, proveedores e inventario.</li>
+      <li>Auditoría de accesos y acciones críticas.</li>
+      <li>Pasarela de pagos segura con tokenización y cifrado.</li>
+      <li>Protección de credenciales con controles operativos.</li>
     </ul>
 
     <h2>Resumen técnico y arquitectónico</h2>
@@ -27,9 +27,6 @@
       <li>Python 3.8+, Tkinter, cryptography, Pillow, pandas, openpyxl, matplotlib</li>
     </ul>
 
-    <h2>Captura de pantalla</h2>
-    <img src="ruta-a-tu-imagen.jpg" alt="Pasarela de Pagos (Sandbox)" style="max-width:100%; border-radius:8px;" />
-
     <h2>Resultados e impacto</h2>
     <ul>
       <li>Datos cifrados, CVV no almacenado</li>
@@ -38,18 +35,43 @@
       <li>Licencias firmadas para control comercial</li>
     </ul>
 
-    <h2>Cómo instalar / usar</h2>
-    <ol>
-      <li>Instalar dependencias con pip</li>
-      <li>Colocar archivos en `C:\RICHARD\RB\2025\Taller_mecánica`</li>
-      <li>Generar claves RSA y licencias</li>
-      <li>Ejecutar `panel_inicio.py`</li>
-    </ol>
+    <h2>Capturas de pantalla</h2>
+    <div class="subcards">
+      <div class="subcard">
+        <h5>Panel de Inicio</h5>
+        <img src="panel_inicio.png" alt="Panel de Inicio" />
+      </div>
+      <div class="subcard">
+        <h5>Órdenes de Trabajo</h5>
+        <img src="ordenes_trabajo.png" alt="Órdenes de Trabajo" />
+      </div>
+      <div class="subcard">
+        <h5>Pasarela de Pagos</h5>
+        <img src="pasarela.png" alt="Pasarela de Pagos" />
+      </div>
+      <div class="subcard">
+        <h5>Reportes Ejecutivos</h5>
+        <img src="reportes.png" alt="Reportes Ejecutivos" />
+      </div>
+      <div class="subcard">
+        <h5>Seguridad</h5>
+        <img src="seguridad.png" alt="Seguridad" />
+      </div>
+    </div>
 
-    <h2>Enlaces</h2>
-    <a href="https://example.com/download" class="btn btn-primary">Descargar paquete / Demo</a>
-    <a href="mailto:tu@correo.com" class="btn btn-outline">Contactar al proveedor</a>
-    <a href="index.html" class="btn btn-outline">Volver al portafolio</a>
+    <div style="margin-top:2rem;">
+      <a href="index.html" class="btn btn-outline">Volver al portafolio</a>
+    </div>
   </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Richard Bello Roncancio</p>
+    <p class="muted">Soluciones tecnológicas con trazabilidad y precisión institucional</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
