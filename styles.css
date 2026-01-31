@@ -127,6 +127,7 @@ body {
   color: var(--accent-green);
 }
 
+
 /* Contacto */
 .contacto p {
   margin: 0.5rem 0;
@@ -154,3 +155,4 @@ body {
   .hero-text h1 { font-size: 2.2rem; }
   .hero-text p { font-size: 1.1rem; }
   .cards, .subcards { flex-direction: column; align-items: center;
+
