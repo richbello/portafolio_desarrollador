@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automatización CDP - Richard Bello Roncancio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="section">
+    <h1>Automatización Certificados de Disponibilidad Presupuestal_Masivos</h1>
+    <p>
+      Automatiza la generación masiva de plantillas CRP desde contratos en PDF y equivalencias CDP en Excel, 
+      eliminando errores manuales y mejorando la trazabilidad presupuestal.
+    </p>
+
+    <h2>¿Qué problema resuelve?</h2>
+    <p>Reduce errores humanos y tiempos operativos en la generación de CRP, garantizando trazabilidad, seguridad y eficiencia institucional.</p>
+
+    <h2>Resumen técnico y arquitectónico</h2>
+    <ul>
+      <li>Interfaz web en Streamlit con login seguro y roles.</li>
+      <li>Procesamiento de PDFs con <code>pdfplumber</code> y cruce con Excel vía <code>pandas</code>.</li>
+      <li>Generación de plantilla estructurada en Excel con campos presupuestales, fechas, identificaciones y objetos contractuales.</li>
+      <li>Logs de accesos, alertas automáticas y versionado de reportes para auditoría.</li>
+    </ul>
+
+    <h2>Tecnologías usadas</h2>
+    <ul>
+      <li>Python, Streamlit, pdfplumber, pandas, openpyxl</li>
+      <li>Logging, shutil, HTML/CSS institucional</li>
+    </ul>
+
+    <h2>Resultados e impacto</h2>
+    <ul>
+      <li>Exportación directa de Excel listo para cargue masivo.</li>
+      <li>Interfaz clara con identidad visual local.</li>
+      <li>Trazabilidad completa con logs versionados.</li>
+      <li>Reducción de tiempos operativos y errores humanos.</li>
+    </ul>
+
+    <h2>Capturas de pantalla</h2>
+    <div class="capturas">
+      <img src="img/USME_INTERFAZCRP1.png" alt="Login institucional" />
+      <img src="img/USME_INTERFAZCRP2.png" alt="Carga de archivos PDF y Excel" />
+      <img src="img/USME_INTERFAZCRP3.png" alt="Vista previa de plantilla generada" />
+      <img src="img/USME_INTERFAZCRP4.png" alt="Reporte de accesos y alertas" />
+    </div>
+
+    <div class="volver">
+      <a href="index.html" class="btn btn-outline">← Volver al inicio</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Richard Bello Roncancio</p>
+    <p class="muted">Soluciones tecnológicas con trazabilidad y precisión institucional</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
