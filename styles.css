@@ -102,12 +102,13 @@ body {
   color: var(--accent-green);
 }
 
-/* Subcards para imágenes internas */
+/* Subcards */
 .subcards {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 1rem;
+  justify-content: center;
 }
 .subcard {
   flex: 1 1 300px;
@@ -151,8 +152,4 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .hero-text h1 { font-size: 2.2rem; }
-  .hero-text p { font-size: 1.1rem; }
-  .cards, .sub
-
-
-
+  .hero-text p { font-size:
