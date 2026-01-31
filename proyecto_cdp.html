@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cargue Masivo CDP - Richard Bello Roncancio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="section">
+    <h1>Cargue Masivo CDP - Alcaldía Local de Usme</h1>
+    <p>
+      Automatiza la generación masiva de plantillas CDP a partir de contratos en PDF, reduciendo errores manuales y asegurando trazabilidad en procesos presupuestales.
+    </p>
+
+    <h2>¿Qué problema resuelve?</h2>
+    <p>
+      Convierte procesos manuales en automáticos, garantiza seguridad con login y credenciales, y asegura trazabilidad con logs y auditoría.
+    </p>
+
+    <h2>Resumen técnico y arquitectónico</h2>
+    <ul>
+      <li>Interfaz web en Streamlit con login seguro y roles.</li>
+      <li>Procesamiento de PDFs con PyMuPDF (fitz) y cruce con Excel vía pandas.</li>
+      <li>Generación de plantilla estructurada en Excel lista para cargue masivo.</li>
+      <li>Logs de accesos, alertas automáticas y hoja de auditoría integrada.</li>
+      <li>Arquitectura modular: credenciales, panel de seguridad, panel funcional y carpetas salidas/logs/assets.</li>
+    </ul>
+
+    <h2>Tecnologías usadas</h2>
+    <ul>
+      <li>Python</li>
+      <li>Streamlit</li>
+      <li>PyMuPDF (fitz)</li>
+      <li>pandas</li>
+      <li>openpyxl</li>
+      <li>logging & shutil</li>
+    </ul>
+
+    <h2>Resultados e impacto</h2>
+    <ul>
+      <li>Eficiencia: procesos automáticos en segundos.</li>
+      <li>Seguridad: login con credenciales y registro de accesos.</li>
+      <li>Trazabilidad: logs versionados y alertas automáticas.</li>
+      <li>Usabilidad: vista previa y descarga inmediata del Excel generado.</li>
+    </ul>
+
+    <h2>Capturas de pantalla</h2>
+    <div class="capturas">
+      <img src="USMECDP.png" alt="Login institucional" />
+      <img src="USMECDP1.png" alt="Carga de archivos PDF y Excel" />
+      <img src="USMECDP2.png" alt="Vista previa de plantilla generada" />
+      <img src="USMECDP3.png" alt="Reporte de accesos y alertas" />
+      <img src="USMECDP4.png" alt="Descarga de Excel con hoja de auditoría" />
+    </div>
+
+    <div class="volver">
+      <a href="index.html" class="btn btn-outline">← Volver al inicio</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Richard Bello Roncancio</p>
+    <p class="muted">Soluciones tecnológicas con trazabilidad y precisión institucional</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
